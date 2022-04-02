@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/2129f79927.js"></script>
+    <title>personal website</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
+    .main-cont {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info-cont {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 0;
+      flex-shrink: 0;
+      justify-content: center;
+      padding: 5px;
+      padding-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background-color: #1f1f1f;
+      color: #808074;
+      font-size: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+    }
+
+    .tagline {
+      text-align: center;
+    }
+    a {
+      color: #808074;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #808074;
+    }
+
+    fieldset {
+      border: 1px solid "#504b4b";
+      box-sizing: border-box;
+      margin-top: 5px;
+      margin: 0;
+      padding: 10px;
+      padding-top: 3px;
+    }
+
+    .projects {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+    .portfolio-item {
+      font-size: 15px;
+      margin: 0px 5px;
+      flex-grow: 1;
+      max-width: 500px;
+    }
+
+    .portfolio-item:first-of-type {
+      margin-top: 0;
+    }
+
+    .portfolio-item > div:first-of-type {
+      margin-bottom: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main-cont">
+      <div class="info-cont">
+        <h1>abxxbo</h1>
+        <div class="tagline">Software Developer</div>
+        <fieldset>
+          <legend>About Me</legend>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Texas, USA
+            </li>
+            <li>
+              <i class="fas fa-graduation-cap"></i>
+              N/A
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>My Links</legend>
+          <ul>
+            <li>
+              <i class="fab fa-github-square"></i>
+              <a href="https://github.com/abxxbo">Github</a>
+            </li>
+      </div>
+      <div class="projects">
+        <h1>My Projects</h1>
+        <div class="tagline">Some of my favorite projects</div>
+        <fieldset class="portfolio-item">
+          <legend>alibc</legend>
+          A small libc written in C99 as a learning experience.
+          <br>
+          <br>
+          <i class="fas fa-gavel"></i>
+          C
+          <br>
+          <i class="fas fa-github-square"></i>
+          N/A (repo is private)
+        </fieldset>
+        <fieldset class="portfolio-item">
+          <legend>atx</legend>
+          A very simple text editor written in C with no external dependencies.
+          <br>
+          <br>
+          <i class="fas fa-gavel"></i>
+          C
+          <br>
+          <i class="fas fa-github-square"></i>
+          <a href="https://github.com/abxxbo/atx">/atx</a>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>
